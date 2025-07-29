@@ -4,15 +4,21 @@
   box-sizing: border-box;
 }
 
+$color-secundario: #333;
+
+.general {
+  background-color: #dddd;
+  height: 100%;
+  margin: 0;
+}
+
 html {
   height: 100%;
   margin: 0;
 }
 
 body {
-  background-color: rgba(77, 2, 2, 0.867);
-  height: 100%;
-  margin: 0;
+  @extend .general;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -67,7 +73,7 @@ footer {
 .brands-section h2 {
   font-size: 2rem;
   margin-bottom: 30px;
-  color: #333;
+  color: $color-secundario;
 }
 
 .brands-grid {
@@ -180,7 +186,7 @@ tbody tr:hover {
 }
 
 td {
-  color: #333;
+  color: $color-secundario;
 }
 
 .typewriter-container {
