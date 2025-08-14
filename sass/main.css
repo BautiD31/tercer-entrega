@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +23,10 @@ body {
   min-height: 100vh;
 }
 
+main {
+  flex: 1;
+}
+
 h1 {
   font-style: oblique;
   font-size: 50px;
@@ -30,7 +35,7 @@ h1 {
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: bold;
   font-style: normal;
   opacity: 0;
   transform: translateY(30px);
@@ -52,8 +57,7 @@ h1 {
 }
 
 .shadow-drop-2-center {
-  -webkit-animation: shadow-drop-2-center 0.4s
-    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
@@ -67,6 +71,7 @@ footer {
   justify-content: center;
   padding: 10px;
   margin-top: 1rem;
+  bottom: 0;
 }
 
 .footer-a {
@@ -177,25 +182,21 @@ header {
   border-radius: 10px;
   overflow: hidden;
 }
-
-thead {
+.table-envios thead {
   background-color: #212529;
   color: #fff;
   text-align: left;
 }
-
-th,
-td {
+.table-envios th,
+.table-envios td {
   padding: 16px 20px;
   border-bottom: 1px solid #eee;
 }
-
-tbody tr:hover {
+.table-envios tbody tr:hover {
   background-color: #f5f5f5;
   transition: background-color 0.2s ease-in-out;
 }
-
-td {
+.table-envios td {
   color: #333;
 }
 
@@ -214,8 +215,7 @@ td {
   margin: 0 auto;
   letter-spacing: 0.1em;
   width: 0;
-  animation: typing 2s steps(30, end) forwards,
-    blink-caret 0.75s step-end infinite;
+  animation: typing 2s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
   animation-delay: 0s, 0s;
   margin-top: 1.5rem;
 }
@@ -226,8 +226,7 @@ td {
   margin: 0 auto;
   letter-spacing: 0.1em;
   width: 0;
-  animation: typing 2.5s steps(50, end) forwards,
-    blink-caret 0.75s step-end infinite;
+  animation: typing 2.5s steps(50, end) forwards, blink-caret 0.75s step-end infinite;
   animation-delay: 2s, 2s;
 }
 
@@ -237,10 +236,10 @@ td {
   margin: 0 auto;
   letter-spacing: 0.1em;
   width: 0;
-  animation: typing 2s steps(30, end) forwards,
-    blink-caret 0.75s step-end infinite;
+  animation: typing 2s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
   animation-delay: 4s, 4s;
 }
+
 .whatsapp-float {
   position: fixed;
   bottom: 25px;
@@ -308,6 +307,7 @@ td {
   opacity: 1;
   visibility: visible;
 }
+
 @keyframes fadeInSlideUp {
   0% {
     opacity: 0;
@@ -318,7 +318,6 @@ td {
     transform: translateY(0);
   }
 }
-
 @keyframes fadeInDelay {
   0% {
     opacity: 0;
@@ -360,14 +359,12 @@ td {
     box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
   }
   50% {
-    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4),
-      0 0 0 15px rgba(37, 211, 102, 0.1);
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4), 0 0 0 15px rgba(37, 211, 102, 0.1);
   }
   100% {
     box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
   }
 }
-
 @media (max-width: 768px) {
   .whatsapp-float {
     bottom: 20px;
@@ -375,21 +372,17 @@ td {
     width: 55px;
     height: 55px;
   }
-
   .whatsapp-float svg {
     width: 28px;
     height: 28px;
   }
-
   .whatsapp-float::before {
     display: none;
   }
-
   .whatsapp-float::after {
     display: none;
   }
 }
-
 @keyframes typing {
   from {
     width: 0;
@@ -399,8 +392,7 @@ td {
   }
 }
 @keyframes blink-caret {
-  from,
-  to {
+  from, to {
     border-color: transparent;
   }
   50% {
@@ -416,8 +408,7 @@ td {
   }
 }
 @keyframes blink-caret {
-  from,
-  to {
+  from, to {
     border-color: transparent;
   }
   50% {
@@ -459,3 +450,5 @@ td {
     padding: 20px;
   }
 }
+
+/*# sourceMappingURL=main.css.map */
