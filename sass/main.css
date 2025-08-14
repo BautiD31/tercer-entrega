@@ -88,7 +88,7 @@ footer {
 .brands-section h2 {
   font-size: 2rem;
   margin-bottom: 30px;
-  color: #333;
+  color: #b70808;
 }
 
 .brands-grid {
@@ -197,7 +197,7 @@ header {
   transition: background-color 0.2s ease-in-out;
 }
 .table-envios td {
-  color: #333;
+  color: #b70808;
 }
 
 .typewriter-container {
